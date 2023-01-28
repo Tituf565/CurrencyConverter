@@ -1,0 +1,28 @@
+html {
+    box-sizing: border-box;
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+
+.body {
+    font-family: 'Lato', sans-serif;
+}
+
+.sum {
+    border: solid hsl(0, 93%, 30%);
+    border-radius: 15px;
+    width: 200px;
+    background-color: rgb(53, 51, 50);
+    color: white;
+    margin: auto;
+    text-align: center;
+    padding: 8px;
+
+}
+
+.result {
+    margin-left: 15px;
+
+}
