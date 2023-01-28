@@ -1,4 +1,4 @@
-﻿# CurrencyConverter made for the course.
+﻿# Currency Converter made for the course.
 
 ## Demo - https://tituf565.github.io/CurrencyConverter/
 
