@@ -8,7 +8,13 @@ html {
 
 .body {
     font-family: 'Lato', sans-serif;
-}
+    resize: both;
+    overflow: auto;
+    background-image: url("../images/background-image.jpg");
+    background-size: 2000px;
+    background-repeat: no-repeat;
+    }
+
 
 .sum {
     border: solid hsl(0, 93%, 30%);
