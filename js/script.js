@@ -1,31 +1,37 @@
-console.log("Cześć!");
-let euroElement = document.querySelector(".js-euro");
-let usdElement = document.querySelector(".js-usd");
-let poundElement = document.querySelector(".js-pound");
-let plnElement = document.querySelector(".js-pln");
-let selectElement = document.querySelector(".js-select");
-let amountElement = document.querySelector(".js-amount");
-let selectTwoElement = document.querySelector(".js-selectTwo");
-let formElement = document.querySelector(".js-form");
-let resultElement = document.querySelector(".js-result");
+{
+  const welcome = () => {
+    console.log("Cześć!");
+  }
+  const calculate = (amount, selectTwo, select) => {
+    return (amount / selectTwo) * select;
+  }
 
-formElement.addEventListener("submit", (event) => {
-  event.preventDefault();
+  const onFormSubmit = (event) => {
+    event.preventDefault();
+    const selectElement = document.querySelector(".js-select");
+    const amountElement = document.querySelector(".js-amount");
+    const selectTwoElement = document.querySelector(".js-selectTwo");
+    const select = selectElement.value;
+    const selectTwo = selectTwoElement.value;
+    const amount = amountElement.value;
+    const result = calculate(amount, selectTwo, select);
 
-  let select = selectElement.value;
-  let selectTwo = selectTwoElement.value;
-  let amount = amountElement.value;
-  let result = (amount / selectTwo) * select;
+    updateResultText(result);
 
-  let euro = euroElement.value;
-  let pln = plnElement.value;
-  let usd = usdElement.value;
-  let pound = poundElement.value;
+  };
 
-  resultElement.innerText = result.toFixed(2);
-});
+  const updateResultText = (result) => {
+    const resultElement = document.querySelector(".js-result");
+    resultElement.innerText = result.toFixed(2);
+  }
+  const init = () => {
+    const formElement = document.querySelector(".js-form");
+    formElement.addEventListener("submit", onFormSubmit);
+  }
 
+  init();
+  welcome();
 
-
+}
 
 
