@@ -2,7 +2,7 @@
 
 ## Demo - https://tituf565.github.io/CurrencyConverter/
 
-## Screenshoot - ![WebsiteView] (https://i.postimg.cc/Hx2LWwPj/kalkulator.jpg)
+## Screenshoot - ![WebsiteView](https://i.postimg.cc/Hx2LWwPj/kalkulator.jpg)
 
 ## Description - 
 
